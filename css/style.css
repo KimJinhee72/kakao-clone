@@ -152,6 +152,7 @@ header {
   font-size: 18px;
   background: #fff;
   display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
 }
@@ -223,8 +224,14 @@ header {
   font-weight: 550;
   margin-bottom: 20px;
 }
-
-
+/* 메인배너 반응형 390이하 */
+.banner390{
+  display: none;
+  width: 100%;  
+}
+.banner390 img{
+  width: 100%;
+}
 /* 메인아이콘 */
 .icon{
   width: 100%;
@@ -318,9 +325,7 @@ border-top: 3px solid rgba(0, 0, 0, 0.3) ;
   width: 15px;
   height: 15px;
 }
-.best390{
-  display: none;
-}
+
 .price_2{
   line-height: 1.8;
 }
@@ -458,6 +463,9 @@ line-height: 20px;
   width: 9.8%;
   margin: 20px 0 0 148px ;
 }
+.wall img{
+  padding-bottom: 30px ;
+}
 /* 반응형 */
 @media screen and (max-width:815px) {
   .name{
@@ -476,12 +484,13 @@ line-height: 20px;
   }
 }
 @media screen and (max-width:390px){
-  .swiper-slide a img{
+  .visual_Swiper {
     display: none;
   }
-  .visual_Swiper390 a img{
+  .banner390 {
     display: block;
     width: 100%;
   }
+  .newSwiper { flex: 0 0 calc(100% / 2.5);
 
 }
