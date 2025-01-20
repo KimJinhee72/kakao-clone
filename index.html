@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/snake-c-round.png" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="js/style.js" />
+    <title>카카오프렌즈 클론코딩</title>
+  </head>
+  <body>
+    <!-- 전체영역 -->
+    <div class="container">
+      <!-- 해더 -->
+      <header class="header">
+        <div class="inner">
+          <!-- 해더탑 -->
+          <div class="header_top">
+            <!-- 해더탑로고 -->
+            <div class="header_logo">
+              <a href="index.html"> <img src="images/snake-c.png" alt="푸른뱀 춘식이"> </a>
+            </div>
+            <!-- 해더탑 메뉴 -->
+            <div class="header_menu">
+              <a href="#">
+                <img src="images/find1.png" alt="찾기" />
+              </a>
+              <a href="#">
+                <img src="images/car_delivery.png" alt="주문하기" />
+              </a>
+              <a href="#"> <img src="images/cart3.png" alt="장바구니" /> </a>
+              <a href="#">로그인</a>
+            </div>
+          </div>
+          <!-- 해더바텀 -->
+          <div class="header_bottom">
+            <ul class="header_bt_tname">
+              <li>
+                <a href="index.html">
+                  <img src="images/kakaoname.jpg" alt="카카오이름" />
+                </a>
+              </li>
+            </ul>
+            <div class="header_bt_bmenu">
+              <!-- <ul> -->
+              <ul class="header_bt_bmenu">
+                <li>
+                  <a href="#"><h4>홈</h4></a>
+                </li>
+                <li>
+                  <a href="#"><h4>BEST SALE</h4></a>
+                </li>
+                <li>
+                  <a href="#"><h4>NEW ARRIVAL</h4></a>
+                </li>
+                <li>
+                  <a href="#"><h4>해리포터</h4></a>
+                </li>
+                <li>
+                  <a href="#"><h4>오늘의요정</h4></a>
+                </li>
+                <li>
+                  <a href="#"><h4>오징어게임2</h4></a>
+                </li>
+                <li>
+                  <a href="#"><h4>푸른뱀춘식이</h4></a>
+                </li>
+                <!-- ul에 메뉴를 담아 flex를 하려면 ul의 li에 각각 하나씩 담기
+               그리고 ul에 flex  -->
+              </ul>
+              <label for="name">
+                <!-- input 바닥글씨 placeholder  이미지는 배경으로 깔아주기-->
+                <input type="text" class="name" placeholder="카카오프렌즈 상품검색" />
+              </label>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- 메인 -->
+      <main class="main">
+        <div class="inner">
+          
+          <!-- 메인베너 -->
+          <!-- Swiper -->
+          <div class="swiper visual_Swiper">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="images/harrypotterbanner.jpg" alt="해리포터배너" />
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="images/angelbanner.jpg" alt="요정배너" />
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="images/ogamebanner.jpg" alt="오징어게임2배너" />
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="images/snake-c-banner.jpg" alt="푸른뱀춘식이배너" />
+                </a>
+              </li>
+            </ul>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <!-- Swiper JS -->
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+          <!-- Initialize Swiper -->
+          <script>
+            var swiper = new Swiper(".visual_Swiper", {
+              // 마지막 슬라이드 사이즈도 맞춰지고 처음으로 연결됨
+              loop: true,
+              autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+              },
+              spaceBetween: 30,
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+              cssMode: true,
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+              pagination: {
+                el: ".swiper-pagination",
+              },
+              mousewheel: true,
+              keyboard: true,
+            });
+          </script>
+          <!-- 메인베너반응형 390이하 -->
+          <div class="visual_Swiper390">
+            <a href="#">
+              <img src="images/ogamebanner-m.png" alt="오징어게임2">
+            </a>
+          </div>
+          
+          <!-- 인너 안에 인너 -->
+          <div class="in_inner">
+          <!-- 메인 new -->
+          <div class="new">
+              <span>NEW</span><span>새로 나왔어요</span>
+          <!-- Swiper -->
+          <div class="swiper newSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#">                  
+                <img src="images/mush-chunsik (2).jpg" alt="능이춘식이" />
+                <h3>
+                  오늘의요정 인형 능이 <br />요정_춘식이
+                  <p>26,000원</p>
+                </h3>
+                
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="images/ch-chunsik.jpg" alt="치킨춘식이" />
+                  <h3>
+                    오늘의요정 인형 치킨 <br />요정_춘식이
+                    <p>26,000원</p>
+                  </h3>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="images/half-chunsik.jpg" alt="반반춘식이" />
+                  <h3>
+                    오늘의요정 인형 반반 <br />요정_춘식이
+                    <p>26,000원</p>
+                  </h3>
+                </a>
+                
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="images/key-chunsik.jpg" alt="춘식이키링" />
+                  <h3>
+                    오늘의요정 무빙 <br />키링_춘식이
+                    <p>18,000원</p>
+                  </h3>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="images/allkey-chunsik.jpg" alt="춘식이키링모두" />
+                  <h3>
+                    [풀세트] 오늘의요정 <br />인형키링_춘식이 6종
+                    <p>79,000원</p>
+                  </h3>
+                </a>
+              </div>
+              
+            </div>
+            <!-- <div class="swiper-pagination"></div> -->
+
+            <div class="swiper-scrollbar"></div>
+          </div>
+          <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    // var swiper = new Swiper(".newSwiper", {
+    //   scrollbar: {
+    //     el: ".swiper-scrollbar",
+    //     hide: true,
+    //   },
+    // });
+    var swiper = new Swiper(".newSwiper", {
+      slidesPerView: 3.4,
+      spaceBetween: 20,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      scrollbar: {
+        el: ".swiper-scrollbar",
+        hide: true,
+      },
+      loop: true,
+              
+    });
+    </script>
+              </div>
+              
+
+            <!-- 메인 icon -->   
+            <div class="icon">      
+              <div class="icon-t">
+              <ul class="icon-top">
+                <li >
+                  <a href="#">
+                    <img src="images/new-icon.jpg" alt="new아이콘">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="images/lion-icon.jpg" alt="라이언아이콘">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="images/chunsik-icon.jpg" alt="춘식이아이콘">
+                  </a>
+                </li>
+                <li>               
+                  <a href="#">
+                    <img src="images/jordi-icon.jpg" alt="조르디아이콘">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="images/sale-icon.jpg" alt="세일아이콘">
+                  </a>
+                </li>
+              </ul>
+            </div>
+             
+              <div class="icon-b">
+              <ul class="icon-bottom">
+                <li >
+                  <a href="#">
+                    <img src="images/key-icon.jpg" alt="키링아이콘">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="images/caracc-icon.jpg" alt="자동차용품아이콘">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="images/ogame-icon.gif" alt="오징어게임2아이콘">
+                  </a>
+                </li>
+                <li>               
+                  <a href="#">
+                    <img src="images/bluesn-icon.jpg" alt="푸른뱀아이콘">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="images/todayan-icon.jpg "alt="요정아이콘">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          
+        </div>  
+            <!-- 메인 best -->
+            <div class="best">
+              <span>BEST</span><span>제일 잘 나가요</span>
+                <div class="info">
+                  <ul class="best_img">
+                    <li>
+                      <a href="#">
+                        <img src="images/best1.jpg" alt="춘식이다이어리" />
+                        <img src="images/1_icon.png" alt="1등" class="no_1">
+                        <h3>
+                          2025 요정 다이어리_춘식이 <p>17,000원</p> <em>30%</em>
+                          <span>11,900원</span> <br>
+                          <img src="images/star_icon.png" alt="만족도별">
+                           <p>만족률90% 만족리뷰 30</p>
+                        </h3>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="images/best2.jpg" alt="춘식이키링" />
+                        <img src="images/2_icon.png" alt="2등" class="no_1">
+                        <h3 >
+                          푸른뱀 코스튬 피규어 키링_춘식이 <p>16,100원</p> <em>15%</em>
+                          <span>14,000원</span> <br>
+                          <img src="images/star_icon.png" alt="만족도별">
+                           <p> 만족률100% 만족리뷰 75</p>
+                        </h3>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="images/best3.jpg" alt="춘식이키링" />
+                        <img src="images/3_icon.png" alt="3등" class="no_1">
+                        <h3 >
+                          오늘의요정 모니터 인형 행운요정_춘식이 <p>16,500원</p> <em>10%</em>
+                          <span>15,000원</span> <br>
+                          <img src="images/star_icon.png" alt="만족도별">
+                           <p> 리뷰 4</p>
+                        </h3>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              <a href="#"><h5>베스트 상품 더보기></h5></a>
+            </div>
+            
+            <!-- 메인 notice -->
+            <div class="notice">
+              <div class="in_inner">
+                <a href="#">
+                  <img src="images/snowman.jpg" alt="겨울상품">
+                </a>
+                <a href="#">
+                  <img src="images/qna.jpg" alt="QnA" class="qna">
+                </a>
+                <h6>SNS 채널 </h6>
+                <h6 class="sns"><img src="images/instar.png" alt="인스타"> <br>
+                  <a href="#"> https://instagram.com/kakaofriends_official</a>
+                </h6>
+
+              </div>
+            </div>
+          </div>
+          </div>        
+      </main>
+      <!-- 풋터 -->
+      <footer class="footer">
+        <div class="inner">
+          <!-- 풋터 상단 -->
+          <div class="footer-top">
+          <h4 class="footer-top-menu">
+            카카오프렌즈 <p>스토어찜하고 카카오톡으로 다양한 소식을 받아보세요</p>
+            <h4 class="footer-top-img"><img src="images/heart_icon_full.png" alt="스토어찜">
+            <p>스토어찜 63,314</p></h4>
+          </h4>
+        </div>
+        <!--풋터 하단 회사설명  -->
+        <div class="footer-bottom">
+          <nav class="footer-bt-menu">
+            <ul >
+              <li><a href="#">고객센터</a></li>
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+              <li><a href="#">지식재산권보호센터</a></li>
+              <li><a href="#">안전거래센터</a></li>            
+            </ul> 
+          </nav>  
+          <a href="index.html"><img src="images/snake-c.png" alt="춘식이로고" class="chunsik-logo"></a>
+          <span class="footer-bt-address">(주)카카오      대표이사 : 정신아주소 : 제주특별자치도 제주시 첨단로 242
+            <br>사업자등록번호 : 120-81-47521 <em>등록정보확인</em> 통신판매업신고 : 제2015 - 제주아라 - 0032호호스팅 사업자 : (주)카카오
+            <br> 구매안전서비스 : <em>가입사실확인</em>  이메일 : cs.shopping@kakaocorp.com고객센터 : 1544-5664 (통화료 발생) / 톡상담하기 / 상담시간 : 평일 09:00~18:00 (※ 점심시간 12:00 ~ 13:00)
+           <br> <br>Copyright © Kakao Corp. All rights reserved <br><br>(주)카카오에서 판매하는 상품 중에는 개별판매자가 판매하는 상품이 포함되어 있습니다. <br>
+            개별판매자가 판매하는 상품에 대해 (주)카카오는 통신중개판매업자로서 통신판매의 당사자가 아니며 상품의 주문, 배송 및 환불 등과 관련한 의무와 책임은 각 판매자에게 있습니다.
+          </span>
+          <a href="#"><img src="images/img_isolation.png" alt="위해상품차단시스템로고" class="wall"></a>
+        </div>
+      </div>
+      </footer>
+    </div>
+  </body>
+</html>

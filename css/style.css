@@ -1,0 +1,487 @@
+@charset "urf-8";
+/* 전체영역 */
+html,
+body {
+  position: relative;
+  height: 100%;
+  
+}
+body {
+  background: #fff;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  font-family: HelveticaNeue, tahoma, Apple SD Gothic Neo, Malgun Gothic, \b9d1\c740\ace0\b515, dotum, \b3cb\c6c0, sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+.container {
+  width: 100%;
+}
+header .inner,
+main .inner,
+footer .inner {
+  max-width: 1280px;
+  margin: auto;
+}
+.in_inner{
+  max-width: 750px;
+  padding: 30px 30px 0px 30px;
+  margin: auto;
+}
+/* 헤더 */
+header {
+  width: 100%;
+  /* height: 165px; */
+  /* background-color: antiquewhite; */
+}
+/* 해더탑 */
+.header_top {
+  display: flex;
+  width: 100%;
+  height: 49px;
+
+  border-bottom: 2px solid #ddd;
+}
+/* 해더탑 로고 */
+.header_logo { 
+  display: block;
+  width: 49px;
+  height: 49px;
+}
+.header_logo img {
+  width: 100%;
+  height: 100%;
+  margin-top: 0.5px;
+  border-radius: 50%;
+}
+/* 해더탑 메뉴 */
+.header_menu {
+  justify-content: flex-end;
+  display: block;
+  width: 100%;
+  height: 60%;
+  display: flex;
+  text-align: center;
+  line-height: 49px;
+  margin-top: 8px;
+  opacity: 0.7;
+  /* background-color: #333; */
+}
+.header_menu img {
+  padding-right: 15px;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+/* .header_menu > a:nth-child(3){    
+    border-right: 2px solid #ddd ;
+    
+} */
+.header_menu a:last-child {
+  height: 18px;
+  margin-top: 7px;
+  padding: 3px 0 5px 15px;
+  font-size: 15px;
+  font-weight: 530;
+  line-height: 1;
+  border-left: 2px solid #ddd;
+}
+/* 해더 바텀 */
+
+/* 해더바텀 위로고 */
+.header_bt_tname {
+  width: 100%;
+  max-width: 300px;
+  height: 40px;
+  margin: auto;
+  margin-top: 40px;
+}
+.header_bt_tname a img {
+  width: 100%;
+  height: 100%;
+}
+/* 해더바텀 하단메뉴 */
+.header_bt_bmenu {
+  display: block;
+  display: flex;
+  justify-content: space-between;
+}
+.header_bt_bmenu li {
+  padding: 30px 15px 0 0;
+  font-size: 15px;
+}
+.header_bt_bmenu h4{
+  font-size: 15px;
+}
+.name {
+  position: relative;
+  width: 200px;
+  height: 30px;
+  margin: 20px 0 5px 0;
+  padding: 15px;
+  border: 1.5px solid #333;
+  border-radius: 7px;
+  background: url(../images/find1.png) no-repeat 98%;
+  background-size: 30px;
+  opacity: 0.3;
+}
+/* 메인 */
+/* 메인배너 */
+.inner .swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.visual_Swiper {
+  width: 100%;
+  max-width: 1280px;
+  min-width: 300px;
+  height: 420px;
+}
+
+
+.inner .swiper-button-next::after,
+.swiper-button-prev::after {
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+.inner .swiper-pagination-bullet-active {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 10px;
+  height: 10px;
+}
+/* 메인 new */
+.new .best .icon{  
+  padding: 0 0 0 30px;
+  gap: 10px;
+}
+.in_inner span{
+  padding-right: 10px ;
+  font-size: 20px;
+}
+.in_inner span:first-child{
+  font-weight: 550;
+}
+/* /메인 배너 390사이즈일때 */
+.visual_Swiper390 a img{
+  display: none;
+}
+.newSwiper{ 
+  width: 200px;
+  
+}
+.newSwiper .swiper-slide{
+  display: flex;  
+  padding: 20px 20px 0 20px ;
+}
+
+.newSwiper .swiper-slide> a > img{
+  width: 100%;
+  max-width: 150px;
+  min-width: 84px;
+  border-radius: 10px;
+  
+}
+.newSwiper h3{
+  padding-top: 10px;
+  font-size: 15px;
+  text-align: left;
+  line-height: 1.1;
+}
+.newSwiper p{
+  font-weight: 550;
+  margin-bottom: 20px;
+}
+
+
+/* 메인아이콘 */
+.icon{
+  width: 100%;
+  padding: 50px 30px 0 30px;
+}
+
+.icon-top ,.icon-bottom {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+}
+.icon-top{
+border-top: 3px solid rgba(0, 0, 0, 0.3) ;
+}
+.icon-bottom{
+  border-bottom: 3px solid rgba(0, 0, 0, 0.3) ;
+  margin-bottom: 50px;
+}
+.icon-top a, .icon-bottom a{
+  margin: auto;
+  width: 60px;
+  
+}
+.icon-bottom a:first-child{
+  width: 62px;
+}
+.icon-bottom a:last-child{
+  width: 58px;
+}
+.icon-top a img , .icon-bottom a img{
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 20px;
+  
+}
+/* 메인 best */
+.best{
+  width: 100%;
+  margin-top: 70px;
+}
+.best_img li{
+  width: 100%;
+  
+}
+.best_img li a{  
+  width: 100%;  
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+.best_img a img{
+  width: 156px;
+  height: 156px; 
+  border-radius: 10px;  
+}
+.no_1{
+  display: block;
+  position: absolute;
+  padding: 66px;
+  margin-left: -55px ;
+  margin-top: -100px;
+  z-index: 99999;
+}
+.best_img li a h3{
+  position: relative;
+  font-size: 1.10rem;
+}
+.best_img li a p:first-child{
+  padding: 7px 10px 7px 0;
+  font-size:0.9rem;
+  color: #888;
+  text-decoration: line-through;
+  text-decoration-color: #888;
+}
+.best_img li a p:last-child{
+  font-size:0.9rem;
+  line-height: 1.3;
+  padding: 7px 7px 7px 15px;
+}
+.best_img li a em{
+  color: rgb(248, 46, 46);
+}
+.best_img li span{
+  font-weight: 550;
+}
+.best_img li h3 img{
+  position: absolute;
+  top: 76%;
+  width: 15px;
+  height: 15px;
+}
+.best390{
+  display: none;
+}
+.price_2{
+  line-height: 1.8;
+}
+.best h5{
+  background-color: rgba(0, 0, 0, 0.3) ;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 0 40px  20px 40px ;
+  text-align: center;
+}
+/* 메인 notice */
+.notice , .notice img {
+  width: 100%;
+}
+.notice .in_inner{
+  margin-top: 35px;
+}
+.qna{
+  padding: 50px 0 35px;
+}
+.sns{
+  display: flex;
+}
+.sns a{
+  text-decoration: underline;
+  opacity: .5;
+}
+.notice h6{
+  padding: 0 0 5px 20px;
+  line-height: 1.2;
+  color: rgba(0, 0, 0, 0.7)
+}
+.sns img{
+  width: 25px;
+  padding-right: 5px;
+}
+.sns p{
+  color: rgba(0, 0, 0, 0.3) ;
+}
+/* 풋터 */
+/* 풋터 상단 */
+.footer .footer-top{
+  display: block;
+  width: 100%;
+  display: flex;  
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 0 0;
+}
+.footer-top-menu {
+  font-size: 1.3rem;
+  font-weight: 550;
+  width: 50%;
+  margin: 30px 0 0 0;
+  padding: 10px 0px 10px;
+  display: flex;
+  gap:20px;  
+}
+.footer-top-menu p{
+  font-size: 15px;
+  font-weight: 300;
+  margin-top: 5px;
+  padding-left:  20px;
+  border-left: 3px solid rgba(0, 0, 0, 0.2);
+}
+.footer-top-img{
+  display: flex;
+  width: 12.5%;   
+  padding: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  border-radius: 20px;
+  font-size: 14px;
+  line-height: 1.3; 
+  background-color: rgba(0, 0, 0, 0.1) ;
+}
+.footer-top-img img{     
+  width: 20px;
+  height: 20px;  
+  opacity: .3;
+  margin: 1px 0 0 8px;
+}
+.footer-top-img p{
+  width: 70%;
+  /* padding: 2px ; */
+  opacity: .4;
+  margin: 3px 0 0 5px;
+}
+/* 풋터 하단 회사설명 */
+.footer-bottom{  
+  position: relative;
+  margin: 80px 0 0 0;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5) ;
+  
+}
+.chunsik-logo{
+  display: block;
+  float: left;
+  width: 100px;
+  margin: 23px 32px 23px 15px;
+  border-radius: 10px;
+}
+.footer-bt-menu ul{
+  position: absolute;
+  top:0;
+  right: 0;
+  display: block;
+  display: flex;
+}
+
+.footer-bt-menu a{
+  padding: 0 15px;
+  font-size: 0.95rem;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+nav ul> li:nth-child(5) > a{
+  border-right: none ;
+}
+.footer-bt-menu strong{
+  font-weight: 550;
+}
+.footer-bt-address{
+margin-top: 50px;
+line-height: 20px;
+}
+.footer-bt-address span{
+  width: 100%;
+  float: left;  
+  width: 100%;
+}
+.footer-bottom em{ 
+  text-decoration: underline;
+}
+.wall{
+  width: 9.8%;
+  margin: 20px 0 0 148px ;
+}
+/* 반응형 */
+@media screen and (max-width:815px) {
+  .name{
+    display: none;
+  }
+}
+@media screen and (max-width:615px) {
+  .name{
+    display: none;
+  }
+  .header_bt_bmenu h4{
+    display: none;
+  }
+  .header_bt_tname img{
+    
+  }
+}
+@media screen and (max-width:390px){
+  .swiper-slide a img{
+    display: none;
+  }
+  .visual_Swiper390 a img{
+    display: block;
+    width: 100%;
+  }
+
+}
