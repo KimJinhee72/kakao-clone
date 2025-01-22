@@ -183,7 +183,7 @@
                 <img src="images/mush-chunsik (2).jpg" alt="능이춘식이" class="new-img
                 ">
                 <h3>
-                  오늘의요정 인형 능이 <br />요정_춘식이
+                  <p>오늘의요정 인형 </p>능이 요정_춘식이
                   <p>26,000원</p>
                 </h3>
                 <!-- <em>요정_춘식이 <br> 26,000원</em> -->
@@ -193,7 +193,7 @@
                 <a href="#">
                   <img src="images/ch-chunsik.jpg" alt="치킨춘식이" />
                   <h3>
-                    오늘의요정 인형 치킨 <br />요정_춘식이
+                    <p>오늘의요정 인형 </p> 치킨 요정_춘식이
                     <p>26,000원</p>
                   </h3>
                 </a>
@@ -202,7 +202,7 @@
                 <a href="#">
                   <img src="images/half-chunsik.jpg" alt="반반춘식이" />
                   <h3>
-                    오늘의요정 인형 반반 <br />요정_춘식이
+                    <p>오늘의요정 인형 </p> 반반 요정_춘식이
                     <p>26,000원</p>
                   </h3>
                 </a>
@@ -212,7 +212,7 @@
                 <a href="#">
                   <img src="images/key-chunsik.jpg" alt="춘식이키링" />
                   <h3>
-                    오늘의요정 무빙 <br />키링_춘식이
+                    <p>오늘의요정 인형 </p> 무빙 키링_춘식이
                     <p>18,000원</p>
                   </h3>
                 </a>
@@ -245,10 +245,14 @@
     // });
     var swiper = new Swiper(".newSwiper", {
       slidesPerView: 2,
-      breakpoints: {
-        
-        480: {
-          slidesPerView: 2.5,
+      breakpoints: {   
+
+        477: {
+          slidesPerView: 2.3,  //브라우저가 1024보다 클 때
+          spaceBetween: 20,
+        },
+        594: {
+          slidesPerView: 3.1,
           // slidesPerView: ,  //브라우저가 768보다 클 때
         
         },
@@ -395,8 +399,7 @@
                 <h6>SNS 채널 </h6>
                 <h6 class="sns"><img src="images/instar.png" alt="인스타"> <br>
                   <a href="#">https://instagram.com/kakaofriends_official</a>                  
-                </h6>
-                
+                </h6>                
               </div>
             </div>
           </div>
