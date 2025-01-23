@@ -285,6 +285,7 @@ border-top: 3px solid rgba(0, 0, 0, 0.3) ;
   display: block;
   display: flex;
   flex-direction: column;
+  
 }
 .best_img li{
   width: 100%;
@@ -693,6 +694,15 @@ line-height: 20px;
     padding: 20px 0 0 0 ;
     font-size: 18px;    
   }
+  .best_img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .best_img > li:last-child > a > img,
+  .best_img > li:last-child > a > h4{
+    display: none;
+  }
+                    
   .best h5{
     margin-top: 10px ;
   }
