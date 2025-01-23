@@ -279,11 +279,19 @@ border-top: 3px solid rgba(0, 0, 0, 0.3) ;
   min-width: 300px;
   margin-top: 70px;
 }
+.best_img{
+  position: relative;
+  width: 100%;
+  display: block;
+  display: flex;
+  flex-direction: column;
+}
 .best_img li{
   width: 100%;
-  
+  position: relative;
 }
-.best_img li a{  
+.best_img li a{ 
+  position: relative; 
   width: 100%;  
   padding: 20px;
   display: flex;
@@ -296,12 +304,13 @@ border-top: 3px solid rgba(0, 0, 0, 0.3) ;
   max-width: 156PX;
   border-radius: 10px;  
 }
-.no_1{
+.best_img .no_1{
+  width: 30px;
   display: block;
   position: absolute;
-  padding: 66px;
-  margin-left: -55px ;
-  margin-top: -100px;
+  top: 20%;
+  left: 5%;
+  
   z-index: 99999;
 }
  .best_img li a h3{
@@ -331,6 +340,9 @@ border-top: 3px solid rgba(0, 0, 0, 0.3) ;
   top: 76%;
   width: 15px;
   height: 15px;
+}
+.best_img li a h4{
+  display: none;
 }
 
 .price_2{
@@ -590,26 +602,14 @@ line-height: 20px;
   }
 }
 @media screen and (max-width:599px){
-  /* .newSwiper .swiper-slide > a > img{
-    width: 0%;
-} */
-.newSwiper h3 p:first-child{
-    display: none;
-}
-  .icon-top a img, .icon-bottom a img {
+    .icon-top a img, .icon-bottom a img {
     width: 85%;
   }
 }
 .no_1{
-  .no_1{
-    display: block;
-    position: absolute;
-    padding: 10%;
-    margin-left: -55px ;
-    margin-top: -100px;
-    z-index: 99999;
-  }
+  padding: -1px;
 }
+
   /* .newSwiper h3 > p:first-child{
     display: none;
   }
@@ -624,6 +624,38 @@ line-height: 20px;
     overflow: hidden;
   }
 } */ 
+@media screen and (max-width:565px){
+  .best_img .no_1{
+    width: 25px;
+    margin-right: 100px;
+    display: block;
+    position: relative;
+    gap:5px;
+  }
+  .best_img {
+    flex-direction: row;
+  }
+  
+  .best_img li a{
+    flex-direction: column;
+    width: 100%;
+  }
+  .best_img li a img{
+    width: 90%;
+  }  
+  .best_img h3{
+    display: none;
+  }
+  .best_img li a h4{
+    display: block;
+    line-height: 1.2;
+    font-size: 15px;
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+  
 @media screen and (max-width:515px){  
   .icon-top , .icon-bottom{
     width: 100%;
@@ -675,7 +707,7 @@ line-height: 20px;
 @media screen and (max-width:390px){
   .newSwiper .swiper-slide > a > img{
     width: 100%;
-    height: ;    
+    
   }
  .in_inner{
   padding: 30px 40px 0px 40px;
