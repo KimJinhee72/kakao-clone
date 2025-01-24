@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="카카오계정" property="og:title">
+    <link rel="icon" href="https://accounts.kakaocdn.net/images/og_kakao.png" width="5" height="5" property="og:image">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/login.js"></script>
+    <title>로그인 페이지</title>
+</head>
+<body>
+    <h1>KAKAO</h1>
+    <form action="#" method="post" class="login">
+        <div class="inner">           
+        <label for="username"></label>
+        <input type="text" placeholder="카카오메일 아이디, 이메일, 전화번호 ">
+        <label for="userpassword"></label>
+        <input type="text" placeholder="카카오 비밀번호 ">
+        <div class="simplelogin">
+          <label for="simplelogin" class="=simplelogin"> </label>
+          <input type="radio">간편로그인 정보 저장</input>
+          <img id="image" src="images/information_icon.svg" alt="도움말 이미지" >
+          
+        </div>  
+        <div id="help" style="display: none;" >
+            <p>도움말이 표시되었습니다.</p>
+          </div>      
+        <a href="index.html"><h6>로그인</h6></a>
+        <span class="line1"> </span> OR
+        <span class="line2"></span>        
+        <a href="index.html" ><h6>QR 로그인</h6></a>
+        <div class="footer-left">
+            <p>회원가입</p>
+        </div>
+        <div class="footer-right"></div>
+            <p>계정찾기</p>
+            <p>비밀번호 찾기</p>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
