@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* 전체영역 */
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+body {
+  background: #fff;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #333 ;
+  
+  margin: 0;
+  padding: 0;
+  font-family: HelveticaNeue, tahoma, Apple SD Gothic Neo, Malgun Gothic, \b9d1\c740\ace0\b515, dotum, \b3cb\c6c0, sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 200px;
+  margin-bottom: 30px;
+}
+.login {  
+  width:  400px;
+ 
+  margin: auto;
+  padding: 0 100px;
+  text-align: center;
+  padding: 50px;
+  border: 1px solid #ddd;
+}
+.login input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 0;
+  border-bottom: 3px solid #ddd;
+  
+}
+.simplelogin {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: flex-start;
+  
+}
+.simplelogin input{
+    width: 20px;
+    height: 20px;
+    margin: 3px;
+    
+}
+.simplelogin img{
+    width: 20px;
+    height: 20px;
+    opacity: .7;
+}
+.login h6{
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 2.5;
+    /* color: #fff; */
+    margin: 20px 0;
+    border-radius: 5px;
+    background-color: rgba(253, 221, 15, 0.906);
+}
+.login > h6:last-child{
+    display: block;     
+    background-color: rgba(0, 0, 0, .3);
+}
+.login span{
+    display: inline-block;
+    width: 100px;
+    height: 1px;
+    margin: 5px 10px;
+    background-color: #ddd;
+    
+}

@@ -109,7 +109,7 @@ header {
 /* 해더바텀 위로고 */
 .header_bt_tname {
   width: 100%;
-  max-width: 300px;
+  max-width: 320px;
   height: 40px;
   margin: auto;
   margin-top: 40px;
@@ -274,7 +274,7 @@ header {
 /* 메인 best */
 .best {
   width: 100%;
-  min-width: 300px;
+  min-width: 320px;
   margin-top: 70px;
 }
 .best_img {
@@ -358,10 +358,10 @@ header {
 .notice,
 .notice img {
   width: 100%;
+  
 }
-.qna {
-  padding: 50px 0 35px;
-}
+
+
 .sns {
   display: flex;
 }
@@ -376,6 +376,9 @@ header {
   padding: 0 0 5px 20px;
   line-height: 1.2;
   color: rgba(0, 0, 0, 0.7);
+}
+.qna{
+  margin: 30px 0 20px 0 ;
 }
 .sns img {
   width: 25px;
@@ -392,7 +395,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 100px 0 0;
+  padding: 30px 0 0;
 }
 .footer-top-menu {
   font-size: 1.3rem;
@@ -453,6 +456,9 @@ header {
   margin: 23px 32px 23px 15px;
   border-radius: 10px;
 }
+.footer-bt-menu {
+  position: relative;
+}
 .footer-bt-menu ul {
   position: absolute;
   top: -20px;
@@ -460,6 +466,7 @@ header {
   display: block;
   display: flex;
   gap: 5px;
+  display: flex;
   /* line-height: 1.1; */
 }
 
@@ -508,7 +515,7 @@ nav ul > li:nth-child(5) > a {
 @media screen and (max-width: 1140px) {
   .footer-bt-menu ul {
     position: absolute;
-    top: -22px;
+    top: -40px;
     right: 0;
   }
   .chunsik-logo {
@@ -523,7 +530,7 @@ nav ul > li:nth-child(5) > a {
     margin-bottom: 10px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 775px) {
   .no_1 {
     display: flex;
   }
@@ -561,6 +568,7 @@ nav ul > li:nth-child(5) > a {
   .footer-bt-address2 {
     display: block;
     width: 80%;
+    line-height: 1.5;
   }
 }
 
@@ -586,9 +594,7 @@ nav ul > li:nth-child(5) > a {
   .best_img li a h3 {
     font-size: 1.1rem;
   }
-
-  .footer .footer-top {
-    padding: 50px 0;
+  .footer-bt-menu ul {
   }
 }
 @media screen and (max-width: 599px) {
@@ -666,13 +672,13 @@ nav ul > li:nth-child(5) > a {
     min-width: 50px;
   }
   .footer-bt-menu ul {
-    display: block;
-    top: -34%;
-    right: 10px;
-    font-size: 13px;
-    line-height: 1.2;
-    text-align: right;
+    flex-wrap: wrap;
+    justify-content: flex-end;
   }
+}
+.footer-bt-menu a{
+  font-size: 14px;
+
 }
 @media screen and (max-width: 477px) {
   .newSwiper .swiper-slide > a > img {
@@ -695,13 +701,16 @@ nav ul > li:nth-child(5) > a {
   .best_img > li > a > img {
     width: 125px;
   }
-  .qna {
-    padding: 30px 0 20px 0;
-  }
+ 
   .footer-bt-menu ul {
     right: 20px;
+    display: flex;
+  }
+  .footer-bottom em {
+    display: none;
   }
 }
+
 @media screen and (max-width: 390px) {
   .header_bt_tname a img {
     margin-top: 5px;
@@ -741,23 +750,43 @@ nav ul > li:nth-child(5) > a {
     margin: 0;
   }
   .best {
+    position: relative;
     margin-top: 50px;
+  }
+  .best h5 {
+    display: none;
   }
   .sns img {
     margin: 0 0 5px 5px;
   }
-  .footer-bt-menu ul {
+  /* .footer-bt-menu ul {
     width: 100%;
     flex-direction: column;
     align-items: flex-end;
     font-size: 13px;
     line-height: 1.1;
-  }
+  } */
   .wall {
     width: 100px;
   }
   .wall img {
     width: 100%;
+  }
+  .notice > a:first-child {
+    margin-top: 30px;
+  }
+
+  .more {
+    position: absolute;
+    top: 73%;
+    right: -10px;
+    background: ;
+    width: 10px;
+    height: 10px;
+    transform: scale(-100%);
+    background: url(../images/arrow_pc.svg) no-repeat;
+    bottom: 0;
+    transform: rotate(-90deg) scale(1.5); /* 90도 회전과 1.5배 크기 확대 */
   }
   /* .swiper-slide img{
     flex: 0 0 50%
