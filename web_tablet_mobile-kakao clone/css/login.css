@@ -41,7 +41,7 @@ h1 {
   width:  600px; 
   margin: 40px auto 30px;
   text-align: center;
-  padding: 60px 50px;
+  padding: 40px 50px;
   border: 1px solid #ddd;
 }
 .login input {
@@ -147,4 +147,37 @@ h1 {
 .footer-right{
   display: flex;
   gap: 5px;
+}
+/* form하단 풋터 */
+footer{
+  width:  600px; 
+  margin: 20px auto 30px;  
+  text-align: center;
+  font-size: 14px;
+}
+footer .inner {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+.inner select{
+  width: 100px;
+  text-align: center;
+  border:none;
+  font-size: 14px;
+}
+.com-service{
+  display: flex;  
+}
+.com-service a{
+  padding: 0 12px;
+  border-left:1px solid #ddd;
+}
+.groupsite{
+  display: flex;
+  align-items: center;
+}
+.groupsite img{
+  width: 15px;
+  height: 15px;
 }

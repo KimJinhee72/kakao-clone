@@ -14,6 +14,7 @@ $(function () {
       .mouseout(function () {
         $("#help p").hide();
       },1000);
-      $("#help span").hide();  
-    
+      $("#help span").hide();      
   });
+
+  

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="카카오계정" property="og:title">
-    <link rel="icon" href="https://accounts.kakaocdn.net/images/og_kakao.png" width="5" height="5" property="og:image">
+    <link rel="icon" href="images/og_kakao_k.png"  property="og:image">
     <link rel="stylesheet" href="css/login.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/login.js"></script>
@@ -33,7 +33,7 @@
         <a href="afterlogin-index.html"><h6>로그인</h6></a>
         <span class="line1"> </span> OR
         <span class="line2"></span>        
-        <a href="afterlogin-index.html" class="qrlog" ><h6>QR 로그인</h6></a>
+        <a href="qrlogin.html" class="qrlog" ><h6>QR 로그인</h6></a>
         <div class="footer">
          <div class="footer-left">
             <a href="#"><p>회원가입</p></a>
@@ -45,5 +45,23 @@
          </div>
      </div>     
     </form>
+    <footer>
+        <div class="inner">
+            <select name="selectlang" id="lang">
+                <option value="#">한국어</option>
+                <option value="#">English</option>
+                <option value="#">日本語</option>
+            </select>
+            <div class="com-service">
+                <a href="#">이용약관</a>
+                <a href="#"><strong>개인정보처리방침</strong></a>
+                <a href="#">고객센터</a>
+            </div>
+            <div class="groupsite">
+                <img src="images/c_icon.png">
+                <a href="https://www.kakaocorp.com/page/" target="_blank">Kakao Corp.</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
