@@ -1,20 +1,40 @@
-$(function () {
-    $("#help").hide();   
-    $(".help").hide();  
+$(function () {  
+         
+    $(".helpp").hide();  
+    // $("#image")
+    //   .mouseover(function () {        
+    //     $(".helpp").show(); 
+    //     $(".help a").show()
+    //   }).mouseout(function () {
+    //     $(".helpp").hide();
+    //     $(".help a").hide();      
+    //   })
     $("#image")
-      .mouseover(function () {
-        $("#help").show();
-        $(".help").show();  
-        $(".help a").mouseover(function(){
-            $(this).css("font-size", "17px");                    
-        }).mouseout(function () {
-            $(this).css("font-size", "16px");
-        })     
+      .mouseover(function () {        
+        $(".helpp").stop().show(); 
+        $(".help a").stop().show();
       })
-      .mouseout(function () {
-        $("#help p").hide();
-      },1000);
-      $("#help span").hide();      
-  });
+      $("#image , .helpp").click(function () {
+        $(".helpp").hide();
+        $(".help a").hide();      
+      })
 
+      // $("#image").click(function(){
+      //   $(".helpp").stop().show(); 
+      //   $(".help a").stop().show()
+      // }).mouseout(function () {
+      //       $(".helpp").hide();
+      //       $(".help a").hide();      
+      //     })
+
+      //   $(".help a").mouseover(function(){
+      //       $(this).css("font-size", "17px");
+      //       $(this).css("cursor", "pointer");                             
+      //   }).mouseout(function () {
+      //       $(this).css("font-size", "16px");
+      //   })     
+      // })
+      
+  });
+  
   

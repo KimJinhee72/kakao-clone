@@ -37,6 +37,10 @@ h1 {
   margin-bottom: 40px;  
   background: url(../images/logo_kakao_black.png) no-repeat;
 }
+h1:hover{
+  opacity: .7;
+  cursor: pointer;
+}
 .login .inner {  
   width:  600px; 
   margin: 40px auto 30px;
@@ -78,23 +82,29 @@ h1 {
   width: 24px;
   height: 24px;
   opacity: 1;
+  cursor: pointer;
 }
-.help > p{ 
+.helpp { 
   position: relative;
   float: left;
   width: 400px;
   height: 50px;
   line-height: 23px;
-  padding: 2px 0 2px 5px;
+  padding: 2px 2px 2px 10px;
   color: #f4f1f1;
   text-align: left;
   font-size: 15px;
   z-index: 999999;
+  
+  display: none;
   background-color: rgba(0, 0, 0, .5);  
 }
-.help a{
+.helpp.open{
+  display: block;
+}
+.help >a{
   position: absolute;
-  top:42.2%; 
+  top:41.5%; 
   left: 50%;
   float: left;
   width: 100px;  
@@ -102,12 +112,11 @@ h1 {
   font-weight: bold;
   text-decoration: underline;
   font-style: italic;
+  display: none;
   color: #ccc;
   z-index: 999999999;
 }
-.help a:hover{
-  font-weight: bold;
-}
+
 .login h6{
     font-size: inherit;
     font-weight: 500;

@@ -42,6 +42,10 @@ h1 {
   background: url(../images/logo_kakao_black.png) no-repeat;
   background-size: 100%;
 }
+h1:hover{
+  opacity: .7;
+  cursor: pointer;
+}
 .login .inner {  
   width:  600px; 
   margin: 40px auto 30px;
@@ -52,49 +56,88 @@ h1 {
 .inner h2{
   font-weight: normal;
   font-size: 28px;
+  margin-bottom: 30px;
 }
 .box_qrcode {
-  display: inline-block;
-  margin: 20px;
+  display: inline-block;  
+  
+  
 }
 .qr_code p{
   width: 450px;
+  line-height: 28px;
+  margin-bottom: 30px;
   font-size: 15px;
   font-weight: normal;
-  background:url(../images/scan__icon.png) no-repeat 9% 120%;
+  background:url(../images/scan__icon.png) no-repeat 8% 95%;
   background-size: 25px ;
 }
 .qr_code canvas{
-  padding: 50px 50px 0px 50px;
+  float: left;
+  margin-top: 20px;
+  width: 250px;
+  padding: 30px;
+  border: 3px solid #f9dc25;
 } 
 .desc_code{
   position: relative;
   width: 150px;
   margin: auto ;
+  margin-top: 210px;
+  margin-bottom: -20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+}
+.desc_code span{  
+  margin-bottom: 10px;
+  
 }
 
-.txt_time>span{
-  font-size: 13px; 
+.txt_time>span{  
+  font-size: 17px; 
 }
 .ico_reset img{
   position: absolute;
-  top: 7px;
-  left: 125px;
-  width: 20px;
-  height: 20px; 
+  top: 0;
+  left: 135px;
+  width: 30px;
+  height: 30px;
+  opacity: 2; 
   /* margin-left: 20px;  */
-
 }
+.emph_time{
+  color: red;
+  font-weight: bold;
+}
+.ico_reset img:hover{
+  cursor: pointer;  
+  width: 33px;
+  height: 33px;
+}
+.btn_help{
+  width: 35px;
+  margin: 30px 0px  0 0;
+  border: none;
+  background-color: #fff;
+}
+.btn_help img{
+  width: 100%;
+}
+
 .simplelogin {
-  position: relative;
+  float: left;
+  width: 230px;  
+  bottom: 0;  
   display: flex;
+  font-size: 18px;
   flex-wrap: wrap;
   align-items: center;
   gap: 7px;
   justify-content: flex-start;
   
+}
+.simplelogin , .orign-login{
+  margin-top: 60px ;
 }
 .simplelogin input{
     width: 18px;
@@ -112,35 +155,48 @@ h1 {
   height: 24px;
   opacity: 1;
 }
-.help > p{ 
-  position: relative;
+.orign-login{
   float: left;
+  width: 200px;  
+  font-size: 18px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.help{
   width: 400px;
   height: 50px;
-  line-height: 23px;
+}
+.helpp {  
+  float: left; 
+  width: 400px;
+  height: 50px;
+  line-height: 25px;  
   padding: 2px 0 2px 5px;
   color: #f4f1f1;
-  text-align: left;
+  text-align: center;
   font-size: 15px;
-  z-index: 999999;
+  display: none;  
   background-color: rgba(0, 0, 0, .5);  
 }
-.help a{
-  position: absolute;
-  top:68%; 
-  left: 50%;
-  float: left;
+.helpp a{  
   width: 100px;  
   font-size: 15px;
   font-weight: bold;
+  text-decoration: center;
   text-decoration: underline;
   font-style: italic;
+  display: none;
   color: #ccc;
-  z-index: 999999999;
+  
 }
 .help a:hover{
   font-weight: bold;
 }
+.orign-login{
+  font-size: 18px;
+}
+
+
 /* form하단 풋터 */
 footer{
   width:  600px; 
