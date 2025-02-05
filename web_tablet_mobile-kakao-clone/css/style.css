@@ -431,6 +431,10 @@ header {
   opacity: 0.3;
   margin: 1px 0 0 8px;
 }
+.footer-top-img img:hover{
+  opacity: 2;
+  cursor: pointer;
+}
 .footer-top-img p {
   width: 70%;
   /* padding: 2px ; */

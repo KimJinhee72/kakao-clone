@@ -1,12 +1,40 @@
-$(document).ready(function() {
-    // 이미지 클릭 시 도움말 표시
-    $("#image").click(function() {
-        $("#help").show();
-    });
-    // 닫기 버튼 클릭 시 도움말 숨김
+$(function () {  
+         
+    $(".helpp").hide();  
+    // $("#image")
+    //   .mouseover(function () {        
+    //     $(".helpp").show(); 
+    //     $(".help a").show()
+    //   }).mouseout(function () {
+    //     $(".helpp").hide();
+    //     $(".help a").hide();      
+    //   })
+    $("#image")
+      .mouseover(function () {        
+        $(".helpp").stop().show(); 
+        $(".help a").stop().show();
+      })
+      $("#image , .helpp").click(function () {
+        $(".helpp").hide();
+        $(".help a").hide();      
+      })
 
-    $("#help p").click(function() {
-        $("#help").hide();
-    });
-   
-});
+      // $("#image").click(function(){
+      //   $(".helpp").stop().show(); 
+      //   $(".help a").stop().show()
+      // }).mouseout(function () {
+      //       $(".helpp").hide();
+      //       $(".help a").hide();      
+      //     })
+
+      //   $(".help a").mouseover(function(){
+      //       $(this).css("font-size", "17px");
+      //       $(this).css("cursor", "pointer");                             
+      //   }).mouseout(function () {
+      //       $(this).css("font-size", "16px");
+      //   })     
+      // })
+      
+  });
+  
+  

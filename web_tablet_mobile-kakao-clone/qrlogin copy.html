@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR 코드 생성기</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        #qrcode {
+            margin-top: 20px;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+</head>
+<body>
+    <h1>QR 코드 생성기</h1>
+    <div id="qrcode"></div>
+
+    <script>
+        $(document).ready(function() {
+            var qrData = "http://127.0.0.1:5501/index.html";
+            $("#qrcode").qrcode({
+                text: qrData,
+                width: 256,
+                height: 256
+            });
+        });
+    </script>
+</body>
+</html>
