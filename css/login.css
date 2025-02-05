@@ -32,7 +32,7 @@ a {
 h1 {
   width: 177px;
   height: 55px;
-  margin: 40px auto 30px; 
+  margin: auto; 
   margin-top: 6%;
   margin-bottom: 40px;  
   background: url(../images/logo_kakao_black.png) no-repeat;
@@ -41,8 +41,10 @@ h1:hover{
   opacity: .7;
   cursor: pointer;
 }
-.login .inner {  
-  width:  600px; 
+.login .inner {
+  width:  100%; 
+  max-width: 600px;  
+  
   margin: 40px auto 30px;
   text-align: center;
   padding: 40px 50px;
@@ -159,7 +161,7 @@ h1:hover{
 }
 /* form하단 풋터 */
 footer{
-  width:  600px; 
+  max-width: 600px; 
   margin: 20px auto 30px;  
   text-align: center;
   font-size: 14px;
@@ -189,4 +191,26 @@ footer .inner {
 .groupsite img{
   width: 15px;
   height: 15px;
+}
+@media screen and (max-width: 525px){
+  footer .inner{
+    flex-direction: column;
+    align-items: center
+  }
+}
+
+@media screen and (max-width: 505px) {
+  .login span{
+    display: inline-block;
+    width: 100px;
+    height: 2px;
+    margin: 5px 10px;
+    background-color: #ddd;
+    
+}
+}
+@media screen and (max-width: 450px){
+  .login input{
+    font-size: 16px;
+  }
 }
