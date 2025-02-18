@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/og_kakao_k.png" property="og:image">
     <link rel="stylesheet" href="css/qrlogin.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -10,15 +11,19 @@
     <script src="js/qrlogin.js" defer></script>
     <title>QR 로그인</title>
 </head>
+
 <body>
-    <a href="index.html"><h1></h1></a>  
+    <a href="index.html">
+        <h1></h1>
+    </a>
     <form action="#" method="post" class="login">
-        <div class="inner">           
+        <div class="inner">
             <h2>QR코드 로그인</h2>
             <div class="box_qrcode">
                 <span class="qr_code">
                     <p>카카오톡 앱 > 더보기 > 우측 상단의
-                        <br>  QR코드 스캔 버튼을 눌러 QR코드를 스캔하세요.</p>                    
+                        <br> QR코드 스캔 버튼을 눌러 QR코드를 스캔하세요.
+                    </p>
                 </span>
                 <div class="desc_code">
                     <span class="txt_time">
@@ -26,28 +31,30 @@
                         <span class="emph_time">05:00</span>
                     </span>
                     <span class="ico_account ico_reset"><img src="images/recycle arrow_icon.png" alt="시간연장"></span>
-                    
+
                 </div>
                 <button type="button" class="btn_help" aria-haspopup="true">
-                    <span class="ico_account ico_help"><a href="images/qruse.png" ><img src="images/question_icon.png" alt="qr접속도움말"></a></span>
+                    <span class="ico_account ico_help"><a href="images/qruse.png"><img src="images/question_icon.png"
+                                alt="qr접속도움말"></a></span>
                 </button>
                 <div class="ft-info">
-                <div class="simplelogin">
-                    <label for="simplelogin" class="=simplelogin"> </label>
-                    <input type="radio">로그인 상태유지</input>
-                    <img id="image" src="images/information_icon.svg" alt="도움말 이미지" >
-                </div>                 
-                <div class="orign-login">
-                    <a href="login.html">카카오계정 직접 입력</a>
+                    <div class="simplelogin">
+                        <label for="simplelogin" class="=simplelogin"> </label>
+                        <input type="radio">로그인 상태유지</input>
+                        <img id="image" src="images/information_icon.svg" alt="도움말 이미지">
+                    </div>
+                    <div class="orign-login">
+                        <a href="login.html">카카오계정 직접 입력</a>
+                    </div>
                 </div>
-                <div class="help" >
-                    <h5 class="helpp">개인정보 보호를 위해 개인 기기에서만 사용해 주세요.<a href="https://cs.kakao.com/helps_html/1073209949" target="_blank" rel="noreferrer" class="link_more">도움말 보기</a></h5>                   
-                
+                <div class="help">
+                    <h6 class="helpp">개인정보 보호를 위해 개인 기기에서만 사용해 주세요.</h6><a
+                        href="https://cs.kakao.com/helps_html/1073209949" target="_blank" rel="noreferrer"
+                        class="link_more">도움말 보기</a>
                 </div>
             </div>
-            </div>
-        </div>  
-         
+        </div>
+
     </form>
     <footer>
         <div class="inner">
@@ -67,5 +74,5 @@
             </div>
         </div>
     </footer>
-    
+
 </html>

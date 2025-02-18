@@ -1,0 +1,379 @@
+@charset "utf-8";
+/* 전체영역 */
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+body {
+  background: #fff;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, Helvetica Neue, Apple SD Gothic Neo, Segoe UI, Roboto, Arial, NotoSans, Open Sans, Malgun Gothic, 맑은 고딕, sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+.responsive-image {
+  max-width: 10px; /* 최대 너비를 100px로 설정 */
+  height: auto; /* 이미지 비율을 유지 */
+}
+h1 {
+  width: 177px;
+  height: 55px;
+  margin: 40px auto 30px;
+  margin-top: 6%;
+  margin-bottom: 40px;
+  background: url(../images/logo_kakao_black.png) no-repeat;
+  background-size: 100%;
+}
+h1:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.login .inner {
+  width: 100%;
+  max-width: 600px;
+  margin: 10px auto 10px;
+  text-align: center;
+  padding: 20px 10px;
+  border: 1px solid #ddd;
+}
+.inner h2 {
+  margin-top: 40px ;
+  font-weight: normal;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+.box_qrcode {
+  display: inline-block;
+}
+.qr_code p {
+  max-width: 450px;
+  line-height: 28px;
+  margin-bottom: 30px;
+  font-size: 15px;
+  font-weight: normal;
+  background: url(../images/scan__icon.png) no-repeat 3% 99%;
+  background-size: 25px;
+}
+.qr_code canvas {
+  /* float: left; */
+  margin-top: 20px;
+  width: 250px;
+  padding: 30px;
+  border: 3px solid #f9dc25;
+}
+.desc_code {
+  position: relative;
+  width: 150px;
+  margin: auto;
+  margin-bottom: -20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.desc_code span {
+  margin-bottom: 10px;
+}
+
+.txt_time > span {
+  font-size: 17px;
+}
+.ico_reset img {
+  position: absolute;
+  top: 0;
+  left: 135px;
+  width: 30px;
+  height: 30px;
+  opacity: 2;
+  /* margin-left: 20px;  */
+}
+.emph_time {
+  color: red;
+  font-weight: bold;
+}
+.ico_reset img:hover {
+  cursor: pointer;
+  width: 33px;
+  height: 33px;
+}
+.btn_help {
+  width: 35px;
+  margin: 30px 0px 0 0;
+  border: none;
+  background-color: #fff;
+}
+.btn_help  img {
+  width: 100%;
+}
+.ico_help img {
+  width: 28px;
+  position: relative;
+  bottom: 100px;
+  left: 400%;
+}
+/* ft-info */
+.ft-info{
+  width: 100%;
+  height: 50px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.simplelogin {
+  width: 120%;
+
+  height: 100%;
+  bottom: 0;
+  display: flex;
+  font-size: 16px;
+  align-items: flex-start;
+  gap: 7px;
+
+}
+.orign-login {
+  width: 100%;
+  max-width: 200px !important;
+  height: 100%;
+}
+.orign-login {
+  width: 100%;
+}
+.orign-login a {
+  width: 170px;
+  font-size: 16px;
+}
+.simplelogin input {
+  width: 18px;
+  height: 18px;
+  margin: 3px;
+}
+.simplelogin img {
+  width: 23px;
+  height: 23px;
+  opacity: 0.5;
+}
+.simplelogin img:hover {
+  width: 24px;
+  height: 24px;
+  opacity: 1;
+}
+.orign-login {
+  float: right;
+  max-width: 200px;
+  font-size: 18px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.help {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  position: relative;
+  top: -20px;
+  left: 10px;
+}
+.help h6{
+  width: 200px;
+  height: 50px;
+  line-height: 20px;
+  padding: 3px 0 3px 5px;
+  color: #f4f1f1;
+  text-align: left;
+  font-size: 15px;
+  display: none;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.link_more{
+  width: 280px;
+}
+.help>a{
+  position: relative;
+  top:0;
+  left: 10%;
+  width: 100px;
+  line-height: 23px;;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: center;
+  text-decoration: underline;
+  font-style: italic;
+  /* display: none; */
+  color: #ccc;
+}
+
+.help a:hover {
+  font-weight: bold;
+}
+.orign-login {
+  font-size: 18px;
+}
+
+/* form하단 풋터 */
+footer {
+  max-width: 600px;
+  margin: 20px auto 30px;
+  text-align: center;
+  font-size: 14px;
+}
+footer .inner {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+.inner select {
+  width: 100px;
+  text-align: center;
+  border: none;
+  font-size: 14px;
+}
+.com-service {
+  display: flex;
+}
+.com-service a {
+  padding: 0 12px;
+  border-left: 1px solid #ddd;
+}
+.groupsite {
+  display: flex;
+  align-items: center;
+}
+.groupsite img {
+  width: 15px;
+  height: 15px;
+}
+@media screen and (max-width: 600px) {
+  footer .inner {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 570px) {
+  footer .inner {
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+  .desc_code {
+    width: 197px;
+    padding-top: 10px;
+    justify-content: center;
+  }
+  .desc_code span {
+    margin-bottom: 0;
+  }
+  .ico_reset img {
+    position: absolute;
+    top: 13px;
+    left: 165px;
+    width: 30px;
+    height: 30px;
+    opacity: 2;
+    /* margin-left: 20px; */
+  }
+  .btn_help {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    width: 35px;
+    /* border: none; */
+    background-color: #fff;
+  }
+  .btn_help img {
+    width: 28px;
+  }
+  .simplelogin {
+    font-size: 16px;
+  }
+  .orign-login a {
+    max-width: 200px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 470px) {
+  .login .inner {
+    padding: 0;
+  }
+  .box_qrcode{
+    width: 100%;
+  }
+  .qr_code p {
+    max-width: 450px;
+    line-height: 28px;
+    margin-bottom: 30px;
+    font-size: 15px;
+    font-weight: normal;
+    background: url(../images/scan__icon.png) no-repeat 0% 99%;
+    background-size: 25px;
+  }
+  .ft-info{
+   display: block;
+  }
+  .help{ position: relative;
+    top: -100px;
+    left: 190px;
+    flex-direction: column;
+  }
+  .btn_help {
+    position: absolute;
+    top: 63%;
+    left: 48%;
+    width: 35px;
+    /* border: none; */
+    background-color: #fff;
+  }
+  .simplelogin{
+    margin-top: 10px;
+  }
+  .orign-login a {
+    margin-left: 10px;
+    margin-top: 20px;
+    max-width: 200px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .login .inner {
+    padding: 0;
+  }
+  .ft-info{
+    display: flex;
+    gap: 0;
+   }
+  .help {
+    display: block;
+    position: relative;
+    top: -10px;
+    left: 0px;
+  }
+  .simplelogin{
+    gap: 0;
+  }
+  .simplelogin img {
+    width: 21px;
+  }
+  .orign-login a {
+    text-align: center;
+    margin-top: 11px;
+    margin-left: 0;
+    max-width: 200px;
+    font-size: 15px;
+  }
+}
