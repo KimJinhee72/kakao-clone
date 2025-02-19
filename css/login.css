@@ -201,12 +201,7 @@ footer .inner {
 
 @media screen and (max-width: 505px) {
   .login span{
-    display: inline-block;
-    width: 60px;
-    height: 2px;
-    margin: 5px 10px;
-    background-color: #ddd;
-    
+    display: none;    
 }
 }
 @media screen and (max-width: 450px){
