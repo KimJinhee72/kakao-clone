@@ -187,6 +187,7 @@ h1:hover {
   left: 0;
   right: 0;
   top: 0;
+  left: 0;
   bottom: 0;
   z-index: 1010;
   overflow: auto;
@@ -198,6 +199,10 @@ h1:hover {
 
 .common_layer .inner_layer {
   position: relative;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   width: 380px;
   height: auto;
   margin: auto;
