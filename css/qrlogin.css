@@ -182,7 +182,7 @@ h1:hover {
 /* 유효 만료 모달 */
 .common_layer {
   display: -ms-flex;
-  display: flex;
+  display: none;
   position: fixed;
   left: 0;
   right: 0;
