@@ -179,7 +179,218 @@ h1:hover {
 .close:hover {
   color: black;
 }
+/* 유효 만료 모달 */
+.common_layer {
+  display: -ms-flex;
+  display: flex;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1010;
+  overflow: auto;
+  min-width: auto;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.4);
+  flex-direction: column;
+}
 
+.common_layer .inner_layer {
+  position: relative;
+  width: 380px;
+  height: auto;
+  margin: auto;
+  padding: 47px 30px 30px;
+  border-radius: 1px;
+  background-color: #fff;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.common_layer .tit_layer {
+  display: block;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: #191919;
+  font-family: NotoSans, AppleSDGothicNeo, Malgun Gothic, 맑은 고딕, 돋움, dotum,
+    sans-serif;
+}
+
+.common_layer p.tit_layer {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.common_layer .desc_layer {
+  padding-top: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  color: #7f7f7f;
+  letter-spacing: -0.06em;
+}
+
+.common_layer .desc_type2,
+.common_layer .desc_type2:first-of-type {
+  padding-top: 8px;
+}
+
+.common_layer .desc_layer:first-of-type {
+  padding-top: 15px;
+}
+
+.common_layer .desc_type3 {
+  color: #191919;
+}
+
+.common_layer .desc_type3:first-of-type {
+  padding-top: 18px;
+}
+
+.common_layer .layer_head .desc_layer {
+  padding-top: 4px;
+}
+
+.common_layer .link_txt {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #191919;
+  vertical-align: top;
+  text-decoration: underline;
+}
+
+.common_layer .layer_foot {
+  padding-top: 34px;
+}
+
+.common_layer .group_btn {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.common_layer .group_btn .btn_g {
+  width: 100%;
+  height: 44px;
+  margin-top: 8px;
+  border-radius: 6px;
+  font-size: 15px;
+  line-height: 46px;
+  border: none;
+}
+
+.common_layer .group_btn .btn_g:first-of-type {
+  margin-top: 0;
+}
+.common_layer .item_btn .btn_g {
+  border-radius: 4px;
+}
+
+.common_layer .item_btn + .item_btn {
+  padding-left: 6px;
+}
+
+.common_layer .layer_body .group_btn {
+  padding-top: 10px;
+}
+
+.common_layer .btn_close {
+  position: absolute;
+  right: 30px;
+  top: 19px;
+  border: none;
+  color: #e6e6e6;
+  background-color: #fff !important;
+}
+.ico_close {
+  font-size: 20px;
+  margin: 5px 0 !important;
+}
+.common_layer .btn_close .ico_close {
+  width: 24px;
+  height: 24px;
+  margin: 3px;
+  background-position: -50px -50px;
+}
+
+.common_layer .item_choice {
+  display: flex;
+  width: 100%;
+  margin: 16px 0 6px;
+  justify-content: space-between;
+}
+
+.common_layer .item_choice .link_arr {
+  margin-right: -10px;
+}
+
+.common_layer .item_choice .link_arr .ico_arr {
+  display: block;
+  margin: 3px 10px 2px 11px;
+}
+
+.common_layer .group_choice {
+  padding: 16px 0 6px;
+}
+
+.common_layer .group_choice .item_choice {
+  display: inline-flex;
+  width: auto;
+  margin: 0;
+}
+
+.common_layer .group_choice .item_choice + .item_choice {
+  margin-left: 21px;
+}
+
+.common_layer .inner_layer_dkaptcha {
+  width: 460px;
+  padding: 24px;
+  border-radius: 8px;
+}
+
+.common_layer .inner_layer_dkaptcha .tit_layer {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 25px;
+  word-break: keep-all;
+  word-wrap: break-word;
+}
+
+.common_layer .inner_layer_dkaptcha .desc_layer,
+.common_layer .inner_layer_dkaptcha .layer_foot {
+  padding-top: 24px;
+}
+
+.common_layer .inner_layer_dkaptcha .group_btn .btn_g {
+  height: 46px;
+}
+
+.bg_dark .common_layer .inner_layer {
+  background-color: #2c2c2e;
+}
+
+.bg_dark .common_layer .desc_layer.desc_type3,
+.bg_dark .common_layer .tit_layer {
+  color: #f2f2f2;
+}
+
+.bg_dark .common_layer .desc_layer {
+  color: #a6a6a6;
+}
+
+.bg_dark .common_layer .link_txt {
+  color: #f2f2f2;
+}
+
+.bg_dark .common_layer .btn_close .ico_close {
+  background-position: -75px -50px;
+}
+
+/* */
 .ft-info {
   display: flex;
   justify-content: center;
