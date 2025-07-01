@@ -34,11 +34,11 @@ a {
   height: auto; /* 이미지 비율을 유지 */
 }
 h1 {
-  width: 177px;
+  width: 88px;
   height: 55px;
   margin: 40px auto 30px;
-  margin-top: 6%;
-  margin-bottom: 40px;
+  margin-top: 5%;
+  margin-bottom: 30px;
   background: url(../images/logo_kakao_black.png) no-repeat;
   background-size: 100%;
 }
@@ -49,9 +49,10 @@ h1:hover {
 .login .inner {
   width: 100%;
   max-width: 600px;
-  margin: 40px auto 30px;
+  max-height: 583px;
+  margin: 40px auto 0px;
   text-align: center;
-  padding: 60px 50px;
+  padding: 60px 50px 30px;
   border: 1px solid #ddd;
 }
 .inner h2 {
@@ -59,75 +60,134 @@ h1:hover {
   font-size: 28px;
   margin-bottom: 30px;
 }
-.box_qrcode {
-  display: inline-block;
-}
+
 .qr_code p {
-  max-width: 450px;
-  line-height: 28px;
+  min-width: 200px;
+  line-height: 25px;
   margin-bottom: 30px;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: normal;
-  background: url(../images/scan__icon.png) no-repeat 3% 99%;
   background-size: 25px;
 }
+.qr_code p img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;}
+
 .qr_code canvas {
-  float: left;
-  margin-top: 20px;
-  width: 250px;
-  padding: 30px;
+  margin: auto;
+  margin-left: 35px;
+  width: 200px;
+  padding: 20px 20px 35px;
   border: 3px solid #f9dc25;
+}
+.box_qrcode{
+  position: relative;
+    width: 206px;
+    height: 230px;
+    margin: 20px auto 20px;
+    padding: 24px 24px 0;
+    border: 4px solid #ffde01;
+    box-sizing: border-box;
 }
 .desc_code {
   position: relative;
-  width: 150px;
-  margin: auto;
-  margin-top: 210px;
-  margin-bottom: -20px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 1px;
+  text-align: center;
 }
-.desc_code span {
-  margin-bottom: 10px;
+.desc_code> span {
+  z-index: 999999;
 }
 
 .txt_time > span {
-  font-size: 17px;
+  font-size: 14px;
 }
-.ico_reset img {
-  position: absolute;
-  top: 0;
-  left: 135px;
-  width: 30px;
-  height: 30px;
-  opacity: 2;
-  /* margin-left: 20px;  */
-}
+
 .emph_time {
   color: red;
   font-weight: bold;
 }
+.ico_reset> img {
+  width: 22px;
+  height: 22px;
+  margin-top: 10px;
+  align-items: center;
+  opacity: 1;
+}
 .ico_reset img:hover {
   cursor: pointer;
-  width: 33px;
-  height: 33px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
 }
 .btn_help {
-  width: 35px;
-  margin: 30px 0px 0 0;
+  width: 22px;
+  height: 22px;
+  margin-left: 190px;
+  margin-top: -40px;
   border: none;
+  cursor: pointer;
   background-color: #fff;
+  opacity:  0.5;
 }
-.btn_help img {
+.ico_help>img{
+  width: 20px;
+  height: 20px;
+  margin-bottom: 14px;
+  opacity: 0.5;
+}
+.ico_help>img:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+/* 모달 */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
   width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
 }
 
+.modal-content {
+  margin: 10% auto;
+  background: #fff;
+  padding: 20px;
+  max-width: 800px;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000;
+}
+
+.close {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: black;
+}
+
+.ft-info{
+  display: flex;
+  justify-content: center;
+}
 .simplelogin {
-  float: left;
-  max-width: 230px;
+  max-width: 210px;
   bottom: 0;
   display: flex;
-  font-size: 18px;
+  font-size: 14px;
   flex-wrap: wrap;
   align-items: center;
   gap: 7px;
@@ -135,13 +195,14 @@ h1:hover {
 }
 .simplelogin,
 .orign-login {
-  margin-top: 60px;
+  margin-top: 20px;
 }
 .orign-login {
   width: 100%;
 }
 .orign-login a {
   width: 100%;
+  font-size: 14px;
 }
 .simplelogin input {
   width: 18px;
@@ -154,8 +215,7 @@ h1:hover {
   opacity: 0.5;
 }
 .simplelogin img:hover {
-  width: 24px;
-  height: 24px;
+  cursor: pointer;
   opacity: 1;
 }
 .orign-login {
@@ -166,13 +226,14 @@ h1:hover {
   cursor: pointer;
 }
 .help {
-  width: 400px;
+  width: 100%;
   height: 50px;
 }
 .helpp {
   float: left;
-  width: 400px;
+  width: 100%;
   height: 50px;
+  margin-top: 5px;
   line-height: 25px;
   padding: 2px 0 2px 5px;
   color: #f4f1f1;
@@ -181,15 +242,16 @@ h1:hover {
   display: none;
   background-color: rgba(0, 0, 0, 0.5);
 }
-.helpp a {
+.help a {
   width: 100px;
+  margin: 0 auto;
   font-size: 15px;
   font-weight: bold;
-  text-decoration: center;
   text-decoration: underline;
   font-style: italic;
   display: none;
   color: #ccc;
+  z-index: 999999999;
 }
 .help a:hover {
   font-weight: bold;
@@ -231,83 +293,28 @@ footer .inner {
   width: 15px;
   height: 15px;
 }
+
 @media screen and (max-width: 600px) {
-  footer .inner {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-@media screen and (max-width: 570px) {
   footer .inner {
     flex-direction: column;
     align-items: center;
     margin: auto;
   }
-  .qr_code canvas {
-    margin-left: 20%;
-  }
-  .desc_code {
-    width: 197px;
-    padding-top: 10px;
-    justify-content: center;
-  }
   .desc_code span {
     margin-bottom: 0;
   }
-  .ico_reset img {
-    position: absolute;
-    top: 13px;
-    left: 165px;
-    width: 30px;
-    height: 30px;
-    opacity: 2;
-    /* margin-left: 20px; */
-  }
-  .btn_help {
-    position: absolute;
-    top: 59%;
-    left: 75%;
-    width: 35px;
-    border: none;
-    background-color: #fff;
-  }
-  .btn_help img {
-    width: 100%;
-  }
-  .simplelogin {
-    font-size: 16px;
-  }
   .orign-login a {
     max-width: 200px;
-    font-size: 16px;
   }
-}
+  }
+
+
 @media screen and (max-width: 470px) {
-  .login .inner {
-    padding: 0;
-  }
-
-  .qr_code canvas {
-    margin-top: 20px;
-    width: 230px;
-
-    border: 3px solid #f9dc25;
-  }
-  .btn_help {
-    position: absolute;
-    top: 50%;
-    left: 80%;
-    width: 35px;
-    border: none;
-    background-color: #fff;
-  }
-  .orign-login a {
+    .orign-login a {
     max-width: 200px;
     font-size: 16px;
   }
 }
 @media screen and (max-width: 390px) {
-  .login .inner {
-    padding: 0;
-  }
+
 }

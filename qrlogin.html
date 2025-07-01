@@ -19,24 +19,38 @@
     <form action="#" method="post" class="login">
         <div class="inner">
             <h2>QR코드 로그인</h2>
-            <div class="box_qrcode">
+            <div class="qr_wrapper">
                 <span class="qr_code">
                     <p>카카오톡 앱 > 더보기 > 우측 상단의
-                        <br> QR코드 스캔 버튼을 눌러 QR코드를 스캔하세요.
+                        <br> QR코드 스캔버튼 <img src="./images/scan__icon.png" alt="스캔아이콘"> 을 눌러 QR코드를 스캔하세요.
                     </p>
                 </span>
-                <div class="desc_code">
-                    <span class="txt_time">
-                        <span>남은시간</span>
-                        <span class="emph_time">05:00</span>
-                    </span>
-                    <span class="ico_account ico_reset"><img src="images/recycle arrow_icon.png" alt="시간연장"></span>
 
-                </div>
-                <button type="button" class="btn_help" aria-haspopup="true">
-                    <span class="ico_account ico_help"><a href="images/qruse.png"><img src="images/question_icon.png"
-                                alt="qr접속도움말"></a></span>
-                </button>
+                <div class="box_qrcode">
+  <div class="qr_canvas_area"></div> <!-- QR코드 (canvas 삽입) -->
+  <div class="desc_code">
+    <span class="txt_time">
+      <span>남은시간</span>
+      <span class="emph_time">05:00</span>
+    </span>
+    <span class="ico_account ico_reset">
+      <img src="images/recyclearrow_icon.png" alt="시간연장">
+    </span>
+  </div>
+               <!-- 기존 버튼 -->
+<button type="button" class="btn_help" aria-haspopup="true" >
+  <span class="ico_account ico_help">
+    <img src="images/question_icon.png" alt="도움말 아이콘">
+  </span>
+</button>
+</div>
+<!-- 모달 -->
+<div id="qrModal" class="modal" style="display: none;">
+  <div class="modal-content">
+    <span class="close" >&times;</span>
+    <img src="images/qruse.png" alt="QR접속도움말 이미지" style="width:100%">
+  </div>
+</div>
                 <div class="ft-info">
                     <div class="simplelogin">
                         <label for="simplelogin" class="=simplelogin"> </label>
@@ -48,9 +62,9 @@
                     </div>
                 </div>
                 <div class="help">
-                    <h6 class="helpp">개인정보 보호를 위해 개인 기기에서만 사용해 주세요.</h6><a
+                    <h6 class="helpp">개인정보 보호를 위해 개인 기기에서만 사용해 주세요.<a
                         href="https://cs.kakao.com/helps_html/1073209949" target="_blank" rel="noreferrer"
-                        class="link_more">도움말 보기</a>
+                        class="link_more">도움말 보기</a></h6>
                 </div>
             </div>
         </div>
