@@ -12,7 +12,8 @@ body {
   color: #000;
   margin: 0;
   padding: 0;
-  font-family: HelveticaNeue, tahoma, Apple SD Gothic Neo, Malgun Gothic, \b9d1\c740\ace0\b515, dotum, \b3cb\c6c0, sans-serif;
+  font-family: HelveticaNeue, tahoma, Apple SD Gothic Neo, Malgun Gothic,
+    \b9d1\c740\ace0\b515, dotum, \b3cb\c6c0, sans-serif;
 }
 * {
   margin: 0;
@@ -62,8 +63,8 @@ header {
 /* 해더탑 로고 */
 .header_logo {
   display: block;
-  width: 49px;
-  height: 49px;
+  width: 46px;
+  height: 46px;
 }
 .header_logo img {
   width: 100%;
@@ -91,9 +92,9 @@ header {
   height: 100%;
   opacity: 0.8;
 }
-/* .header_menu > a:nth-child(3){    
+/* .header_menu > a:nth-child(3){
     border-right: 2px solid #ddd ;
-    
+
 } */
 .header_menu a:last-child {
   height: 18px;
@@ -105,7 +106,6 @@ header {
   border-left: 2px solid #ddd;
 }
 /* 해더 바텀 */
-
 /* 해더바텀 위로고 */
 .header_bt_tname {
   width: 100%;
@@ -143,6 +143,60 @@ header {
   background-size: 30px;
   opacity: 0.3;
 }
+/* 헤더모달 */
+/* 로그인이 필요 모달 */
+.header_modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.hdmodal_inner {
+  width: 100%;
+  max-width: 300px;
+  height: 160px;
+  line-height: 30px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.hdmodal_inner h2 {
+  padding: 30px 30px 0;
+}
+.hdmodal_inner p {
+  padding: 0px 30px 20px;
+}
+.hdmodal_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  border: 1px solid #ddd;
+}
+.hdmodal_btn a,button {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+.login_btn{
+  width: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.close_btn {
+  border-left: 1px solid #ddd !important;
+}
 /* 메인 */
 /* 메인배너 */
 .inner .swiper {
@@ -171,7 +225,11 @@ header {
   height: 420px;
   margin-bottom: 50px;
 }
-
+.swiper-button-prev:after {
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 20px !important;
+  font-weight: bold;
+}
 .inner .swiper-button-next::after,
 .swiper-button-prev::after {
   color: rgba(0, 0, 0, 0.3);
@@ -203,7 +261,7 @@ header {
   min-width: 300px;
 }
 .newSwiper {
-  padding: 5% 5%;
+  padding: 5% 5% !important;
 }
 .newSwiper .swiper-slide {
   width: 100%;
@@ -309,7 +367,7 @@ header {
   top: 20%;
   left: 5%;
 
-  z-index: 99999;
+  z-index: 1;
 }
 .best_img li a h3 {
   position: relative;
@@ -358,9 +416,7 @@ header {
 .notice,
 .notice img {
   width: 100%;
-  
 }
-
 
 .sns {
   display: flex;
@@ -377,8 +433,8 @@ header {
   line-height: 1.2;
   color: rgba(0, 0, 0, 0.7);
 }
-.qna{
-  margin: 30px 0 20px 0 ;
+.qna {
+  margin: 30px 0 20px 0;
 }
 .sns img {
   width: 25px;
@@ -431,7 +487,7 @@ header {
   opacity: 0.3;
   margin: 1px 0 0 8px;
 }
-.footer-top-img img:hover{
+.footer-top-img img:hover {
   opacity: 2;
   cursor: pointer;
 }
@@ -512,9 +568,6 @@ nav ul > li:nth-child(5) > a {
   .header_top {
     padding: 0 10px;
   }
-
-  .footer .footer-top {
-  }
 }
 @media screen and (max-width: 1140px) {
   .footer-bt-menu ul {
@@ -526,7 +579,7 @@ nav ul > li:nth-child(5) > a {
     width: 90px;
   }
 }
-@media screen and (max-width: 815px) {
+@media screen and (max-width: 850px) {
   .name {
     display: none;
   }
@@ -618,10 +671,10 @@ nav ul > li:nth-child(5) > a {
     width: 100%;
   }
   .newSwiper .swiper-slide > a > h3{
-    
+
     font-size: 14px;
   }
-  
+
     overflow: hidden;
   }
 } */
@@ -680,9 +733,8 @@ nav ul > li:nth-child(5) > a {
     justify-content: flex-end;
   }
 }
-.footer-bt-menu a{
+.footer-bt-menu a {
   font-size: 14px;
-
 }
 @media screen and (max-width: 477px) {
   .newSwiper .swiper-slide > a > img {
@@ -705,7 +757,7 @@ nav ul > li:nth-child(5) > a {
   .best_img > li > a > img {
     width: 125px;
   }
- 
+
   .footer-bt-menu ul {
     right: 20px;
     display: flex;
@@ -729,7 +781,7 @@ nav ul > li:nth-child(5) > a {
     display: block;
     margin: auto;
     width: 100%;
-    z-index: 99999;
+    z-index: 1;
   }
   .swiper-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal,
@@ -784,7 +836,6 @@ nav ul > li:nth-child(5) > a {
     position: absolute;
     top: 73%;
     right: -10px;
-    background: ;
     width: 10px;
     height: 10px;
     transform: scale(-100%);
