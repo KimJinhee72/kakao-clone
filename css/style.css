@@ -56,9 +56,9 @@ header {
 .header_top {
   display: flex;
   width: 100%;
-  height: 49px;
+  height: 52px;
   justify-content: space-between;
-  border-bottom: 2px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 /* 해더탑 로고 */
 .header_logo {
@@ -125,6 +125,9 @@ header {
   display: flex;
   justify-content: space-between;
 }
+.header_bt_bmenuul {
+  border-bottom: 1px solid #ddd;
+}
 .header_bt_bmenu li {
   padding: 30px 15px 0 0;
   font-size: 15px;
@@ -144,11 +147,42 @@ header {
   background-size: 30px;
   opacity: 0.3;
 }
+/* 헤더 바텀 after표시 */
+.link_tab {
+  position: relative;
+  display: inline-block;
+  padding: 0 12px;
+}
+
+.link_tab:after {
+  content: ""; /* 없으면 안 보임 */
+  position: absolute;
+  left: 0;
+  bottom: -4px; /* 글자 밑에 위치 */
+  width: 50%;
+  height: 3px;
+  background-color: transparent;
+  transition: background-color 0.3s;
+  z-index: 20;
+}
+
+/* 선택된 탭 */
+.link_tab[aria-selected="true"]:after {
+  background-color: rgb(107, 107, 238); /* 강조 색상 */
+}
+
 /* 메인 */
 /* 메인배너 */
 .inner .swiper {
   width: 100%;
   height: 100%;
+}
+.swiper > ul {
+  border-radius: 30px;
+  overflow: hidden; /* 내부 이미지가 부모 모서리를 넘어가지 않게 */
+}
+.swiper-wrapper {
+  margin-top: 30px;
 }
 .swiper-slide {
   text-align: center;
