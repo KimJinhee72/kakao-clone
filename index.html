@@ -23,17 +23,12 @@
     <meta property="og:image" content="https://kimjinhee72.github.io/web_tablet_mobile-kakao-clone/images/snake-c.png" />
     <!-- 소셜 미디어에서 페이지가 공유될 때 사용되는 설명 -->
     <meta property="og:description" content="카카오프렌즈 클론코딩한 웹사이트입니다." />
-    <!-- 아이콘 -->
     <link rel="icon" href="images/snake-c-round.png" />
-    <!-- css -->
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <!-- js -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/style.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="js/style.js" />
     <title>카카오프렌즈 클론코딩</title>
   </head>
   <body>
@@ -50,17 +45,17 @@
             </div>
             <!-- 해더탑 메뉴 -->
             <div class="header_menu">
-              <a href="https://store.kakao.com/?searchFromStore=true" target="_blank" >
+              <a href="#">
                 <img src="images/find1.png" alt="찾기" />
               </a>
-              <a href="#header_modal" >
+              <a href="#">
                 <img src="images/car_delivery.png" alt="주문하기" />
               </a>
-              <a href="#header_modal" > <img src="images/cart3.png" alt="장바구니" /> </a>
-              <a href="login.html" target="_blank">로그인</a>
+              <a href="#"> <img src="images/cart3.png" alt="장바구니" /> </a>
+              <a href="login.html">로그인</a>
             </div>
           </div>
-          <!-- 해더바텀 메뉴부분 -->
+          <!-- 해더바텀 -->
           <div class="header_bottom">
             <ul class="header_bt_tname">
               <li>
@@ -69,28 +64,28 @@
                 </a>
               </li>
             </ul>
-            <div class="header_bt_bmenu">
+            <div class="header_bt_bmenu header_bt_bmenudiv">
               <!-- <ul> -->
-              <ul class="header_bt_bmenu">
-                <li>
-                  <a href="#"><h4>홈</h4></a>
+              <ul class="header_bt_bmenu header_bt_bmenuul">
+                <li class="link_tab" aria-selected="true">
+                  <a href="index.html"><h4>홈</h4></a>
                 </li>
-                <li>
+                <li class="link_tab" >
                   <a href="#best"><h4>BEST SALE</h4></a>
                 </li>
-                <li>
-                  <a href="#new"><h4>NEW ARRIVAL</h4></a>
+                <li class="link_tab">
+                  <a href="#"><h4>NEW ARRIVAL</h4></a>
                 </li>
-                <li>
-                  <a href="#icon"><h4>이벤트 아이콘</h4></a>
+                <li class="link_tab">
+                  <a href="#"><h4>해리포터</h4></a>
                 </li>
-                <li>
+                <li class="link_tab">
                   <a href="#"><h4>오늘의요정</h4></a>
                 </li>
-                <li>
+                <li class="link_tab">
                   <a href="#"><h4>오징어게임2</h4></a>
                 </li>
-                <li>
+                <li class="link_tab">
                   <a href="#"><h4>푸른뱀춘식이</h4></a>
                 </li>
                 <!-- ul에 메뉴를 담아 flex를 하려면 ul의 li에 각각 하나씩 담기
@@ -104,19 +99,6 @@
           </div>
         </div>
       </header>
-      <!-- 헤더 모달 -->
-      <!-- 로그인이 필요 모달 -->
-      <div class="header_modal" style="display: none;">
-          <div class="hdmodal_inner">
-          <h2>로그인이 필요한 메뉴입니다.</h2>
-          <p>로그인 하시겠습니까?</p>
-          <!-- 헤더모달 로그인여부 버튼 -->
-          <div class="hdmodal_btn" onclick="header_modal">
-          <a href="login.html" class="login_btn" target="_blank">로그인하기</a>
-          <button class="close_btn">닫기</button>
-          </div>
-        </div>
-      </div>
       <!-- 메인 -->
       <main class="main">
         <div class="inner">
@@ -153,13 +135,12 @@
 
           <!-- 메인베너 -->
           <!-- Swiper -->
-        <div class="swiper visual_Swiper" id="banner">
-            <!-- swiper-wrapper는 슬라이드들을 감싸는 컨테이너 -->
-              <ul class="swiper-wrapper">
-               <li class="swiper-slide">
+          <div class="swiper visual_Swiper">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
                 <a href="#">
                   <img src="images/harrypotterbanner.jpg" alt="해리포터배너" />
-             </a>
+                </a>
               </li>
               <li class="swiper-slide">
                 <a href="#">
@@ -183,12 +164,41 @@
             <div class="swiper-pagination"></div>
 
           </div>
+          <!-- Swiper JS -->
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+          <!-- Initialize Swiper -->
+          <script>
+            var swiper = new Swiper(".visual_Swiper", {
+              // 마지막 슬라이드 사이즈도 맞춰지고 처음으로 연결됨
+              loop: true,
+              autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+              },
+              spaceBetween: 30,
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+              cssMode: true,
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+              pagination: {
+                el: ".swiper-pagination",
+              },
+              mousewheel: true,
+              keyboard: true,
+            });
+          </script>
 
           <!-- 인너 안에 인너 -->
           <div class="in_inner">
 
           <!-- 메인 new -->
-          <div class="new" id="new">
+          <div class="new">
               <span>NEW</span><span>새로 나왔어요</span>
           <!-- Swiper -->
           <div class="swiper newSwiper">
@@ -247,11 +257,54 @@
 
             <div class="swiper-scrollbar"></div>
           </div>
+          <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    // var swiper = new Swiper(".newSwiper", {
+    //   scrollbar: {
+    //     el: ".swiper-scrollbar",
+    //     hide: true,
+    //   },
+    // });
+    var swiper = new Swiper(".newSwiper", {
+      slidesPerView: 2,
+      breakpoints: {
+
+        477: {
+          slidesPerView: 2.3,  //브라우저가 1024보다 클 때
+          spaceBetween: 20,
+        },
+        594: {
+          slidesPerView: 3.1,
+          // slidesPerView: ,  //브라우저가 768보다 클 때
+
+        },
+        615: {
+          slidesPerView: 3.5,  //브라우저가 1024보다 클 때
+          spaceBetween: 20,
+        },
+      },
+      spaceBetween: 20,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      scrollbar: {
+        el: ".swiper-scrollbar",
+        hide: true,
+      },
+      loop: true,
+
+    });
+    </script>
               </div>
 
 
             <!-- 메인 icon -->
-            <div class="icon" id="icon">
+            <div class="icon">
               <div class="icon-t">
               <ul class="icon-top">
                 <li >
@@ -315,6 +368,7 @@
         </div>
             <!-- 메인 best -->
             <div class="best" id="best">
+                <!-- best 타이틀 -->
               <span>BEST</span><span>제일 잘 나가요</span>
                 <div class="info">
                   <ul class="best_img">
@@ -359,7 +413,7 @@
                     </li>
                   </ul>
                 </div>
-              <a href="#" class="more"><h5>베스트 상품 더보기></h5></a>
+              <a href="#" class="more"><h5 class="moreh5">베스트 상품 더보기></h5></a>
             </div>
 
 
@@ -370,12 +424,12 @@
               <a href="#">
                 <img src="images/snowman.jpg" alt="겨울상품">
               </a>
-              <a href="login.html">
+              <a href="#">
                 <img src="images/qna.jpg" alt="QnA" class="qna">
               </a>
               <h6>SNS 채널 </h6>
               <h6 class="sns"><img src="images/instar.png" alt="인스타"> <br>
-                <a href="https://instagram.com/kakaofriends_official" target="_blank">https://instagram.com/kakaofriends_official</a>
+                <a href="#">https://instagram.com/kakaofriends_official</a>
               </h6>
             </div>
 
@@ -396,11 +450,11 @@
         <div class="footer-bottom">
           <nav class="footer-bt-menu">
             <ul >
-              <li><a href="#">고객센터</a></li>
-              <li><a href="#">이용약관</a></li>
-              <li><a href="#"><strong>개인정보처리방침</strong></a></li>
-              <li><a href="#">지식재산권보호센터</a></li>
-              <li><a href="#">안전거래센터</a></li>
+              <li><a href="https://cs.kakao.com/">고객센터</a></li>
+              <li><a href="https://www.kakao.com/policy/terms?lang=ko">이용약관</a></li>
+              <li><a href="https://www.kakao.com/policy/privacy?lang=ko"><strong>개인정보처리방침</strong></a></li>
+              <li><a href="https://cipr.kakao.com/guide">지식재산권보호센터</a></li>
+              <li><a href="https://csafety.kakao.com/">안전거래센터</a></li>
             </ul>
           </nav>
           <div class="footer-bt-bottom">
